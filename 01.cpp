@@ -8,7 +8,7 @@ int main (){
 
 int X,Y;
 cin >> X >> Y;
-long long *k = new long long [Y + 1];
+int *k = new int [Y + 1];
 
 for (int i = 0; i <= Y; i++){
   if (i == X){
