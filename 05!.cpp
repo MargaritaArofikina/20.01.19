@@ -67,13 +67,13 @@ for (int i = 0; i <= Y; i++){
   } else if (i < X){
     *(arr + i) = INT_MAX;
   } else if ((i % 2 == 0) && (i >= 5)){
-    *(arr + i) = minimum4 (*(arr + i - 1), *(arr + i - 4),*(arr + i - 5), *(arr + i/2)+1);
+    *(arr + i) = minimum4 (*(arr + i - 1), *(arr + i - 4),*(arr + i - 5), *(arr + i/2))+1;
   } else if (i == 4){
-    *(arr + i) = minimum3(*(arr + i - 1), *(arr + i - 4), *(arr + i/2)+1);
+    *(arr + i) = minimum3(*(arr + i - 1), *(arr + i - 4), *(arr + i/2))+1;
   } else if (i == 2){
-    *(arr + i) = minimum2(*(arr + i - 1), *(arr + i/2)+1);
+    *(arr + i) = minimum2(*(arr + i - 1), *(arr + i/2))+1;
   } else if ((i % 2 != 0) && (i >= 5)){
-    *(arr + i) = minimum3(*(arr + i - 1), *(arr + i - 4), *(arr + i - 5) + 1);
+    *(arr + i) = minimum3(*(arr + i - 1), *(arr + i - 4), *(arr + i - 5)) + 1;
 
   } else if ((i % 2 != 0) && (i < 4) && (i >= 1)){
     *(arr + i) = *(arr + i - 1) + 1;
